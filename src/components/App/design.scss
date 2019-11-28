@@ -3,36 +3,36 @@ html {
     height: 100%;
     background-size: 100%, 2px 1px, 1px 2px;
   }
-  .Radarform, .rafaga { position: absolute; }
+  .Radarform, .loading { position: absolute; }
   .Radarform {
     overflow: hidden; 
     top: 50%; left: 50%;
     margin: -234px;
     width: 496px; height: 496px;
-    border: 8px solid red;
+    border: 8px solid #000000;
     border-radius: 50%;
     background: 
-      repeating-radial-gradient(transparent, transparent 23px, #7a2828 25px, #7a2828 27px), 
-      linear-gradient(transparent 49.75%, #464c0e 49.75%, #4b4c0e 50.25%, transparent 50.25%) 50% no-repeat,
-      linear-gradient(90deg, transparent 49.75%, #3f4c0e 49.75%, #4c150e 50.25%, transparent 50.25%) 50% no-repeat,
-      linear-gradient(rgb(8, 53, 4), rgb(47, 192, 144));
+      repeating-radial-gradient(transparent, transparent 23px, #13501b 25px, #73b85f 27px), 
+      linear-gradient(transparent 49.75%, #030303 49.75%, #47473d 50.25%, transparent 50.25%) 50% no-repeat,
+      linear-gradient(90deg, transparent 49.75%, #080808 49.75%, #30382e 50.25%, transparent 50.25%) 50% no-repeat,
+      linear-gradient(rgb(8, 53, 4), #116944);
     background-size: 100%, 218px 218px, 218px 218px, 100%;
   }
   .loading {
     box-sizing: border-box;
     top: 32px; left: 32px;
-    border-right: solid 1px rgba(153, 71, 51, 0.3);
+    border-right: solid 1px rgba(153, 151, 51, 0.3);
     width: 216px; height: 216px;
     border-radius: 100% 0 0 0;
     transform-origin: 100% 100%;
-    background: linear-gradient(50deg, rgba(34, 34, 34, 0) 56%, rgb(153, 51, 51));
+    background: linear-gradient(50deg, rgba(34, 34, 34, 0) 56%, #3a7215);
     animation: sweep 5s infinite linear;
   }
   @keyframes sweep { to { transform: rotate(360deg); } }
   .position{
-      height: 9px;
-      width: 9px;
-      background-color: red;
+      height: 12px;
+      width: 12px;
+      background-color: rgb(16, 40, 119);
       border-radius: 100%;
       margin-left: 49%;
       margin-top: 49%;

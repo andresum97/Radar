@@ -156,10 +156,7 @@ class App extends Component {
     render () {
       return (
         <div className="app">
-          <div className="ubi">
-            Andres Urizar, latitude {this.state.myLatitude} longitude: {this.state.myLongitude}
-            
-          </div>
+            Andres Urizar - Radar
           <Radar />
         </div>
       )
