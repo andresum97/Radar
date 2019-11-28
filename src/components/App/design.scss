@@ -32,8 +32,17 @@ html {
   .position{
       height: 12px;
       width: 12px;
-      background-color: rgb(16, 40, 119);
+      background-color: #6e5b24;
       border-radius: 100%;
       margin-left: 49%;
       margin-top: 49%;
+      animation-name: changecolor;
+      animation-iteration-count: infinite;
+      animation-duration: 2s;
+  }
+
+  @-webkit-keyframes changecolor{
+      0% {background-color: #c09316;}
+      50% {background-color: #6e5b24;}
+      100% {background-color: #c09316;}
   }

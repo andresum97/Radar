@@ -116,41 +116,15 @@ class App extends Component {
                 `
             }
         }).then(response => {
-          console.log(response)
             //console.table(response.data.data.allUsers)
             this.setState({
                 users: response.data.data.allUsers
             })
         })
-        
-        console.log("name: Andres Urizar, latitude:" + this.state.myLatitude+", longitude: "+this.state.myLongitude)
-        let posLatitud = 14.6100245;
-        let posLongitud = -90.66165029999999;
         let widthR = document.getElementById("radar").offsetWidth; //window.innerWidth;
-        widthR = widthR/2
-        console.log(widthR)
+        widthR = widthR/2;
         let heightR = document.getElementById("radar").offsetHeight; //window.innerHeight;
-        heightR = heightR/2
-        //console.log(widthR)
-       // console.log(heightR)
-        //console.log(posLatitud-this.state.myLatitude)
-
-
-
-        let formulaLa = (posLatitud-this.state.myLatitude)
-        let formulaLo = (posLongitud-this.state.myLongitude)
-        console.log("Mis coordeandas")
-        console.log(this.state.myLatitude,this.state.myLongitude)
-
-        console.log("Las coordeandas de ellos")
-        console.log(posLatitud,posLongitud)
-
-        console.log("Las nuevas coordeandas") 
-        console.log(formulaLa,formulaLo)
-
-        
-        
-    
+        heightR = heightR/2;    
     }, 9000)
     }
     render () {
